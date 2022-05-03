@@ -49,6 +49,7 @@ header {
   display: grid;
   gap: 20px;
   grid-template-areas: 'picture name' 'picture title';
+  grid-template-columns: repeat(auto-fit, minmax (200px, 1fr));
 
 }
 
@@ -75,5 +76,16 @@ img {
   font-size: 40px;
   text-shadow: 0 2px 10px #0bce4c;
   margin-top: -100px;
+}
+
+@media screen and (max-width: 900px) {
+  .top-nav {
+    grid-template-areas: 'picture picture''name title';
+  }
+
+@media screen and (max-width: 600px) {
+  .top-nav {
+    grid-template-areas: 'picture' 'name' 'title';
+  }
 }
 
