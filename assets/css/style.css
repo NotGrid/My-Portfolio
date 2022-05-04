@@ -54,9 +54,13 @@ header {
 }
 
 img {
-  margin: 70px 0 20px 100px;
   grid-area: picture;
   box-shadow: 5px 5px 10px;
+}
+
+.banner {
+  height: 300px;
+  width: 100%;
 }
 
 .name {
@@ -76,6 +80,26 @@ img {
   font-size: 40px;
   text-shadow: 0 2px 10px #0bce4c;
   margin-top: -100px;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  border: #242525 solid;
+  margin-top: 30px;
+  box-shadow: 3px 3px 10px 5px green;
+}
+
+.myself {
+  color: green;
+  font-size: 40px;
+  background-color: #242525;
+}
+
+.para {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {
